@@ -1,0 +1,571 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Praise&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Praise&display=swap");
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+  /* Color */
+  --primary-color: #f72d57;
+  --body-color: #f5f5f5;
+  --secondary-color: #ffffff;
+  --text-color: #3f3f3f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: left;
+  background-color: var(--body-color);
+  font-weight: 400;
+  color: var(--text-color);
+  text-transform: capitalize;
+  font-family: "Libre Baskerville";
+}
+
+/*--------------------
+ TYPOGRAPHY
+-----------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/*=============== HEADER & NAV===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8rem;
+}
+.header .logo {
+  font-family: "Praise";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-color);
+}
+.header .navbar a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-color);
+  margin-left: 5rem;
+}
+.header .navbar a i {
+  color: var(--text-color);
+}
+.header .navbar .home {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.header .navbar button {
+  background: var(--primary-color);
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0.5rem 2rem;
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+.nav-colored {
+  background: rgb(221, 217, 217);
+  color: var(--secondary-color);
+}
+.nav-transparent {
+  background-color: transparent;
+}
+
+/* banner section */
+.banner {
+  padding: 1rem 8rem;
+}
+.banner .banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .banner-container .banner-left {
+  width: 50%;
+}
+.banner .banner-container .banner-left h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 72px;
+  color: var(--text-color);
+}
+.banner .banner-container .banner-left .delivery {
+  color: var(--primary-color);
+}
+.banner .banner-container .banner-left p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  padding: 2rem 0;
+}
+.banner .banner-container .banner-right {
+  background: url(/assets/images/Splash\ food\ 1.png) no-repeat;
+  background-position: right;
+}
+.banner .banner-container .banner-right img {
+  width: 567px;
+}
+/* popular section start */
+.popular {
+  padding: 3rem 8rem;
+}
+.popular .popular-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 72px;
+  text-align: center;
+  color: var(--text-color);
+}
+.popular .popular-container .categories {
+  color: var(--primary-color);
+}
+.popular .popular-container .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  width: 100%;
+  padding: 3rem 0;
+}
+.popular .popular-container .box-container .box-1 {
+  background: var(--primary-color) !important;
+  color: var(--secondary-color);
+}
+.popular .popular-container .box-container .box-1 span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+.popular .popular-container .box-container .box-3 img {
+  width: 100px;
+}
+.popular .popular-container .box-container .box-2 img,
+.box-4 img {
+  width: 30px;
+}
+.popular .popular-container .box-container .box-2 span,
+.box-4 span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--primary-color);
+}
+.popular .popular-container .box-container .box {
+  background: var(--secondary-color);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  height: 86px;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  width: 100%;
+  padding: 3rem 0;
+  margin: 0 auto;
+  gap: 1rem;
+  position: relative;
+}
+
+.card-container .card {
+  background: var(--secondary-color);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem 0;
+  position: relative;
+  height: 320px;
+}
+.card-container .card .star {
+  background: url(/assets/images/start-img.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 2rem;
+  top: 0;
+  width: 20px;
+  height: 50px;
+}
+.card-container .card .star p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  color: var(--text-color);
+}
+.card-container .card h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--text-color);
+}
+.card-container .card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+.card-container .card span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+  color: var(--text-color);
+}
+.card-container .card button {
+  background: var(--primary-color);
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  opacity: 1;
+  border: #d9d9d9 solid 1px;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--primary-color);
+}
+
+/* about us */
+.aboutUs {
+  padding: 3rem 8rem;
+}
+.aboutUs .about-container h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 72px;
+  color: var(--text-color);
+  padding-bottom: 2rem;
+}
+.aboutUs .about-container .us {
+  color: var(--primary-color);
+}
+.aboutUs .box-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.aboutUs .box-container .box-2 {
+  padding-top: 5rem;
+}
+.aboutUs .box-container .box-3 {
+  padding-top: 5rem;
+}
+.aboutUs .box-container .box-2 .teamwork {
+  color: var(--primary-color);
+}
+.aboutUs .box-container .box img {
+  width: 90%;
+}
+
+.aboutUs .box-container .content h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: var(--text-color);
+}
+.aboutUs .box-container .content .teamwork {
+  color: var(--primary-color);
+}
+.aboutUs .box-container .content p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+.aboutUs .environment {
+  color: var(--primary-color);
+}
+
+/*=============== Footer Section ===============*/
+.footer {
+  background: var(--primary-color);
+}
+.footer .container {
+  padding: 2rem 8rem;
+}
+.footer .logo {
+  font-family: "Praise";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: var(--secondary-color);
+}
+.footer .icon {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.footer .box-container .box .list-item li a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  color: var(--secondary-color);
+  padding-top: 10rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* header section */
+  #header .logo {
+    margin-left: 3.5rem;
+  }
+  #header {
+    display: block;
+    padding: 3rem 0;
+    background: #f72d57;
+  }
+  .header .nav-toggle-btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    right: 1rem;
+    top: 1rem;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .header .nav-toggle-btn span {
+    background: #ffff;
+    width: 30px;
+    height: 2px;
+  }
+  .header #nav-toggle-btn.active .one {
+    transform: rotate(45deg) translate(3px, 3px);
+    transition: all 0.3s ease;
+  }
+  .header #nav-toggle-btn.active .two {
+    display: none;
+  }
+  .header #nav-toggle-btn.active .three {
+    transform: rotate(-45deg) translate(3px, -3px);
+    transition: all 0.3s ease;
+  }
+
+  .header .navbar.active {
+    margin-left: 0;
+    transition: all 0.5s ease;
+  }
+  .header .navbar {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #f72d57;
+    top: 99%;
+    z-index: 99999;
+    padding: 3rem 0;
+    margin-left: -700px;
+    transition: all 0.5s ease;
+  }
+  .header .logo {
+    padding-left: 1.2rem;
+    color: #ffffff;
+  }
+  .header .line {
+    padding-top: 5rem;
+  }
+  .header .navbar a {
+    display: block;
+    padding-top: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffff;
+  }
+  .header .navbar .cart {
+    display: none;
+  }
+  .header .navbar .home {
+    border-bottom: none;
+    color: #ffff;
+    font-weight: 700;
+  }
+  .header .navbar button {
+    background: #ffffff;
+    color: #f72d57;
+  }
+  .banner .banner-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .banner .banner-container .banner-left {
+    width: 100%;
+    padding-top: 10rem;
+  }
+  .banner .banner-container .banner-left h1 {
+    font-size: 25px;
+    line-height: 3rem;
+  }
+  .banner .banner-container .banner-left p {
+    width: 100%;
+  }
+  .banner .banner-container .banner-right {
+    width: 100%;
+  }
+  .popular .popular-container h1 {
+    font-size: 30px;
+  }
+  .popular .popular-container .box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutUs .about-container .box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0rem;
+  }
+  .aboutUs .about-container h1 {
+    font-size: 35px;
+  }
+  .aboutUs .about-container .box img {
+    width: 100%;
+  }
+  .banner,
+  .popular,
+  .aboutUs {
+    padding: 1rem 1rem;
+  }
+  .footer .container {
+    padding: 1rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .popular .popular-container h1 {
+    font-size: 25px;
+  }
+  .aboutUs .about-container .box-2 h1 {
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+  .aboutUs .about-container .box-3 {
+    padding-bottom: 2rem;
+  }
+  .aboutUs .about-container .box-3 h1 {
+    font-size: 25px;
+    line-height: 2.5rem;
+  }
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
